@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mealify</title>
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="https://kit.fontawesome.com/ffb00e4ce7.js" crossorigin="anonymous"></script>
+</head>
+<body class="dark">
+    <header class="sticky">
+        <nav class="bg-white">
+            <div class="container flex">
+                <div>
+                    <h1 class="font-open font-bold">
+                        <a href="#" class="color-blackish-gray">
+                            Mealify<span class="font-open font-bold color-dark-red">.</span>
+                        </a>
+                    </h1>
+                </div>
+                <div>
+                    <div>
+                        <a href="#nav-menu">
+                            <i class="fa-solid fa-bars color-blackish-gray"></i>
+                        </a>
+                    </div>
+                    <div id="nav-menu" class="absolute">
+                        <ul class="absolute">
+                            <li class="text-right-sm">
+                                <input hidden type="checkbox" id="nav-menu-close">
+                                <label for="nav-menu-close">
+                                    <a href="" class="font-open font-bold color-gray-50">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </a>
+                                </label>
+                            </li>
+                            <li><a href="#home" class="font-open font-bold color-gray-50">Home</a></li>
+                            <li><a href="#chefs" class="font-open font-bold color-gray-50">Chefs</a></li>
+                            <li><a href="#gallery" class="font-open font-bold color-gray-50">Gallery</a></li>
+                            <li><a href="#contact" class="font-open font-bold color-gray-50">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="mode flex main-right text-right-sm">
+                        <label for="light-mode">
+                            <input type="radio" id="light-mode" name="mode" value="0" checked>
+                            <i class="fa-regular fa-sun fa-2xl color-blackish-gray"></i>
+                        </label>
+                        <label for="dark-mode">
+                            <input type="radio" id="dark-mode" name="mode" value="1">
+                            <i class="fa-solid fa-moon fa-2xl color-blackish-gray"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ================= START HOME -->
+        <section id="home" class="bg-light-gray">
+            <div class="container flex">
+                <div class="font-open">
+                    <h2 class="font-amatic color-dark-gray">Enjoy Your Healthy Delicious Food</h2>
+                    <p class="color-gray">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+                    <div class="flex">
+                        <a class="color-white bg-dark-red" href="#contact">Book a Table</a>
+                        <a class="flex font-semibold color-blackish-gray" href="https://www.youtube.com/">
+                            <div class="relative">
+                                <i class="fa-solid fa-play absolute center"></i>
+                            </div>
+                            <span>Watch a Video</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex main-center cross-center">
+                    <div>
+                        <img class="sm-100" src="imgs/hero-img.png" alt="hero-img-diner-plate">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ================= START HOME -->
+
+        <!-- ================= START CHEFS -->
+        <section id="chefs">
+            <div class="container text-center">
+                <div class="sec-head">
+                    <h2 class="sec-head-name font-inter font-regular color-gray-50">CHEFS</h2>
+                    <p class="sec-head-disc font-amatic font-regular color-blackish-gray">Our <span class="color-dark-red">Proffesional</span> Chefs</p>
+                </div>
+                <div class="flex">
+                    <div class="card">
+                        <div>
+                            <img class="sm-100" src="imgs/chefs-1.jpg" alt="chefs-1-male-red-apron">
+                            <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 120" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,48L17.1,48C34.3,48,69,48,103,48C137.1,48,171,48,206,58C240,68,274,88,309,86C342.9,84,377,60,411,54C445.7,48,480,60,514,72C548.6,84,583,96,617,86C651.4,76,686,44,720,28C754.3,12,789,12,823,18C857.1,24,891,36,926,44C960,52,994,56,1029,64C1062.9,72,1097,84,1131,84C1165.7,84,1200,72,1234,70C1268.6,68,1303,76,1337,70C1371.4,64,1406,44,1440,40C1474.3,36,1509,48,1543,44C1577.1,40,1611,20,1646,22C1680,24,1714,48,1749,48C1782.9,48,1817,24,1851,14C1885.7,4,1920,8,1954,10C1988.6,12,2023,12,2057,16C2091.4,20,2126,28,2160,36C2194.3,44,2229,52,2263,64C2297.1,76,2331,92,2366,82C2400,72,2434,36,2451,18L2468.6,0L2468.6,120L2451.4,120C2434.3,120,2400,120,2366,120C2331.4,120,2297,120,2263,120C2228.6,120,2194,120,2160,120C2125.7,120,2091,120,2057,120C2022.9,120,1989,120,1954,120C1920,120,1886,120,1851,120C1817.1,120,1783,120,1749,120C1714.3,120,1680,120,1646,120C1611.4,120,1577,120,1543,120C1508.6,120,1474,120,1440,120C1405.7,120,1371,120,1337,120C1302.9,120,1269,120,1234,120C1200,120,1166,120,1131,120C1097.1,120,1063,120,1029,120C994.3,120,960,120,926,120C891.4,120,857,120,823,120C788.6,120,754,120,720,120C685.7,120,651,120,617,120C582.9,120,549,120,514,120C480,120,446,120,411,120C377.1,120,343,120,309,120C274.3,120,240,120,206,120C171.4,120,137,120,103,120C68.6,120,34,120,17,120L0,120Z"></path></svg>                    
+                        </div>
+                        <div>
+                            <h3 class="font-inter font-bold color-blackish-gray">Walter White</h3>
+                            <span class="font-open color-gray-50">Master Chef</span>
+                            <p class="font-open font-italic color-gray-50">Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+                        </div>
+                        <div class="flex">
+                            <a class="color-gray-50" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="color-gray-50" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a class="color-gray-50" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="color-gray-50" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <img class="sm-100" src="imgs/chefs-2.jpg" alt="chefs-2-female-white-apron-green-hipped-cream">
+                            <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 120" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,48L17.1,48C34.3,48,69,48,103,48C137.1,48,171,48,206,58C240,68,274,88,309,86C342.9,84,377,60,411,54C445.7,48,480,60,514,72C548.6,84,583,96,617,86C651.4,76,686,44,720,28C754.3,12,789,12,823,18C857.1,24,891,36,926,44C960,52,994,56,1029,64C1062.9,72,1097,84,1131,84C1165.7,84,1200,72,1234,70C1268.6,68,1303,76,1337,70C1371.4,64,1406,44,1440,40C1474.3,36,1509,48,1543,44C1577.1,40,1611,20,1646,22C1680,24,1714,48,1749,48C1782.9,48,1817,24,1851,14C1885.7,4,1920,8,1954,10C1988.6,12,2023,12,2057,16C2091.4,20,2126,28,2160,36C2194.3,44,2229,52,2263,64C2297.1,76,2331,92,2366,82C2400,72,2434,36,2451,18L2468.6,0L2468.6,120L2451.4,120C2434.3,120,2400,120,2366,120C2331.4,120,2297,120,2263,120C2228.6,120,2194,120,2160,120C2125.7,120,2091,120,2057,120C2022.9,120,1989,120,1954,120C1920,120,1886,120,1851,120C1817.1,120,1783,120,1749,120C1714.3,120,1680,120,1646,120C1611.4,120,1577,120,1543,120C1508.6,120,1474,120,1440,120C1405.7,120,1371,120,1337,120C1302.9,120,1269,120,1234,120C1200,120,1166,120,1131,120C1097.1,120,1063,120,1029,120C994.3,120,960,120,926,120C891.4,120,857,120,823,120C788.6,120,754,120,720,120C685.7,120,651,120,617,120C582.9,120,549,120,514,120C480,120,446,120,411,120C377.1,120,343,120,309,120C274.3,120,240,120,206,120C171.4,120,137,120,103,120C68.6,120,34,120,17,120L0,120Z"></path></svg>                    
+                        </div>
+                        <div>
+                            <h3 class="font-inter font-bold color-blackish-gray">Sarah Jhonson</h3>
+                            <span class="font-open color-gray-50">Patissier</span>
+                            <p class="font-open font-italic color-gray-50">Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
+                        </div>
+                        <div class="flex">
+                            <a class="color-gray-50" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="color-gray-50" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a class="color-gray-50" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="color-gray-50" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <img class="sm-100" src="imgs/chefs-3.jpg" alt="chefs-3-male-blue-glasses">
+                            <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 120" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,48L17.1,48C34.3,48,69,48,103,48C137.1,48,171,48,206,58C240,68,274,88,309,86C342.9,84,377,60,411,54C445.7,48,480,60,514,72C548.6,84,583,96,617,86C651.4,76,686,44,720,28C754.3,12,789,12,823,18C857.1,24,891,36,926,44C960,52,994,56,1029,64C1062.9,72,1097,84,1131,84C1165.7,84,1200,72,1234,70C1268.6,68,1303,76,1337,70C1371.4,64,1406,44,1440,40C1474.3,36,1509,48,1543,44C1577.1,40,1611,20,1646,22C1680,24,1714,48,1749,48C1782.9,48,1817,24,1851,14C1885.7,4,1920,8,1954,10C1988.6,12,2023,12,2057,16C2091.4,20,2126,28,2160,36C2194.3,44,2229,52,2263,64C2297.1,76,2331,92,2366,82C2400,72,2434,36,2451,18L2468.6,0L2468.6,120L2451.4,120C2434.3,120,2400,120,2366,120C2331.4,120,2297,120,2263,120C2228.6,120,2194,120,2160,120C2125.7,120,2091,120,2057,120C2022.9,120,1989,120,1954,120C1920,120,1886,120,1851,120C1817.1,120,1783,120,1749,120C1714.3,120,1680,120,1646,120C1611.4,120,1577,120,1543,120C1508.6,120,1474,120,1440,120C1405.7,120,1371,120,1337,120C1302.9,120,1269,120,1234,120C1200,120,1166,120,1131,120C1097.1,120,1063,120,1029,120C994.3,120,960,120,926,120C891.4,120,857,120,823,120C788.6,120,754,120,720,120C685.7,120,651,120,617,120C582.9,120,549,120,514,120C480,120,446,120,411,120C377.1,120,343,120,309,120C274.3,120,240,120,206,120C171.4,120,137,120,103,120C68.6,120,34,120,17,120L0,120Z"></path></svg>                    
+                        </div>
+                        <div>
+                            <h3 class="font-inter font-bold color-blackish-gray">William Anderson</h3>
+                            <span class="font-open color-gray-50">Cook</span>
+                            <p class="font-open font-italic color-gray-50">Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
+                        </div>
+                        <div class="flex">
+                            <a class="color-gray-50" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="color-gray-50" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a class="color-gray-50" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="color-gray-50" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ================= END CHEFS -->
+
+        <!-- ================= START GALLERY -->
+        <section id="gallery" class="bg-light-gray">
+            <div class="container">
+                <div class="sec-head text-center">
+                    <h2 class="sec-head-name font-inter font-regular color-gray-50">GALLERY</h2>
+                    <p class="sec-head-disc font-amatic font-regular color-blackish-gray">CHECK <span class="color-dark-red">OUR GALLERY</span></p>
+                </div>
+                <!-- the one flexs >>> using order, and fixed height -->
+                <!-- <div class="flex">
+                    <div class="item">
+                        <div>
+                            <div>
+                                <img class="sm-100" src="imgs/meal-1.jpg" alt="meal-pizza">
+                            </div>
+                            <div class="flex">
+                                <h2 class="font-inter font-bold color-white">Pizza</h2>
+                                <p class="font-open color-white">Hawaiian pizza with ham and pineapple</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div>
+                                <img class="sm-100" src="imgs/meal-4.jpg" alt="meal-levitation-pizza">
+                            </div>
+                            <div class="flex">
+                                <h2 class="font-inter font-bold color-white">Levitation pizza</h2>
+                                <p class="font-open color-white">Levitation pizza on black background.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div>
+                                <img class="sm-100" src="imgs/meal-2.jpg" alt="meal-beef-steaks">
+                            </div>
+                            <div class="flex">
+                                <h2 class="font-inter font-bold color-white">Beef steaks</h2>
+                                <p class="font-open color-white">Tasty beef steaks flying above cast iron grate with fire flames.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div>
+                                <img class="sm-100" src="imgs/meal-7.jpg" alt="meal-frittata">
+                            </div>
+                            <div class="flex">
+                                <h2 class="font-inter font-bold color-white">Frittata</h2>
+                                <p class="font-open color-white">Frittata or potato pie in a ceramic plate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div>
+                                <img class="sm-100" src="imgs/meal-3.jpg" alt="meal-burger">
+                            </div>
+                            <div class="flex">
+                                <h2 class="font-inter font-bold color-white">Burger</h2>
+                                <p class="font-open color-white">grass fed bison hamburger with chips & beer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div>
+                                <img class="sm-100" src="imgs/meal-5.jpg" alt="meal-crispy-fried-chicken">
+                            </div>
+                            <div class="flex">
+                                <h2 class="font-inter font-bold color-white">PiCrispy Fried Chickenza</h2>
+                                <p class="font-open color-white">Golden brown chicken legs with a crunchy coating and juicy meat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div>
+                                <img class="sm-100" src="imgs/meal-6.jpg" alt="meal-lyulya-kebab">
+                            </div>
+                            <div class="flex">
+                                <h2 class="font-inter font-bold color-white">Lyulya kebab</h2>
+                                <p class="font-open color-white">Tender and juicy skewers of ground lamb or beef, flavored with aromatic spices and herbs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- the two flexs >>> row then column -->
+                <!-- <div class="flex">
+                    <div class="flex">
+                        <div class="item">
+                            <div>
+                                <div>
+                                    <img class="sm-100" src="imgs/meal-1.jpg" alt="meal-pizza">
+                                </div>
+                                <div class="flex">
+                                    <h2 class="font-inter font-bold color-white">Pizza</h2>
+                                    <p class="font-open color-white">Hawaiian pizza with ham and pineapple</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>
+                                    <img class="sm-100" src="imgs/meal-4.jpg" alt="meal-levitation-pizza">
+                                </div>
+                                <div class="flex">
+                                    <h2 class="font-inter font-bold color-white">Levitation pizza</h2>
+                                    <p class="font-open color-white">Levitation pizza on black background.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="item">
+                            <div>
+                                <div>
+                                    <img class="sm-100" src="imgs/meal-2.jpg" alt="meal-beef-steaks">
+                                </div>
+                                <div class="flex">
+                                    <h2 class="font-inter font-bold color-white">Beef steaks</h2>
+                                    <p class="font-open color-white">Tasty beef steaks flying above cast iron grate with fire flames.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>
+                                    <img class="sm-100" src="imgs/meal-7.jpg" alt="meal-frittata">
+                                </div>
+                                <div class="flex">
+                                    <h2 class="font-inter font-bold color-white">Frittata</h2>
+                                    <p class="font-open color-white">Frittata or potato pie in a ceramic plate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="item">
+                            <div>
+                                <div>
+                                    <img class="sm-100" src="imgs/meal-3.jpg" alt="meal-burger">
+                                </div>
+                                <div class="flex">
+                                    <h2 class="font-inter font-bold color-white">Burger</h2>
+                                    <p class="font-open color-white">grass fed bison hamburger with chips & beer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>
+                                    <img class="sm-100" src="imgs/meal-5.jpg" alt="meal-crispy-fried-chicken">
+                                </div>
+                                <div class="flex">
+                                    <h2 class="font-inter font-bold color-white">PiCrispy Fried Chickenza</h2>
+                                    <p class="font-open color-white">Golden brown chicken legs with a crunchy coating and juicy meat</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>
+                                    <img class="sm-100" src="imgs/meal-6.jpg" alt="meal-lyulya-kebab">
+                                </div>
+                                <div class="flex">
+                                    <h2 class="font-inter font-bold color-white">Lyulya kebab</h2>
+                                    <p class="font-open color-white">Tender and juicy skewers of ground lamb or beef, flavored with aromatic spices and herbs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- using grid >>> masonry tiles -->
+                <div class="grid">
+                    <div class="item">
+                        <div>
+                            <div>
+                                <img class="sm-100" src="imgs/meal-1.jpg" alt="meal-pizza">
+                            </div>
+                            <div class="flex">
+                                <h2 class="font-inter font-bold color-white">Pizza</h2>
+                                <p class="font-open color-white">Hawaiian pizza with ham and pineapple</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div>
+                                <img class="sm-100" src="imgs/meal-4.jpg" alt="meal-levitation-pizza">
+                            </div>
+                            <div class="flex">
+                                <h2 class="font-inter font-bold color-white">Levitation pizza</h2>
+                                <p class="font-open color-white">Levitation pizza on black background.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div>
+                                <img class="sm-100" src="imgs/meal-2.jpg" alt="meal-beef-steaks">
+                            </div>
+                            <div class="flex">
+                                <h2 class="font-inter font-bold color-white">Beef steaks</h2>
+                                <p class="font-open color-white">Tasty beef steaks flying above cast iron grate with fire flames.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div>
+                                <img class="sm-100" src="imgs/meal-7.jpg" alt="meal-frittata">
+                            </div>
+                            <div class="flex">
+                                <h2 class="font-inter font-bold color-white">Frittata</h2>
+                                <p class="font-open color-white">Frittata or potato pie in a ceramic plate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div>
+                                <img class="sm-100" src="imgs/meal-3.jpg" alt="meal-burger">
+                            </div>
+                            <div class="flex">
+                                <h2 class="font-inter font-bold color-white">Burger</h2>
+                                <p class="font-open color-white">grass fed bison hamburger with chips & beer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div>
+                                <img class="sm-100" src="imgs/meal-5.jpg" alt="meal-crispy-fried-chicken">
+                            </div>
+                            <div class="flex">
+                                <h2 class="font-inter font-bold color-white">PiCrispy Fried Chickenza</h2>
+                                <p class="font-open color-white">Golden brown chicken legs with a crunchy coating and juicy meat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div>
+                                <img class="sm-100" src="imgs/meal-6.jpg" alt="meal-lyulya-kebab">
+                            </div>
+                            <div class="flex">
+                                <h2 class="font-inter font-bold color-white">Lyulya kebab</h2>
+                                <p class="font-open color-white">Tender and juicy skewers of ground lamb or beef, flavored with aromatic spices and herbs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ================= END GALLERY -->
+
+        <!-- ================= START CONTACT -->
+        <section id="contact">
+            <div class="container">
+                <div class="sec-head text-center">
+                    <h2 class="sec-head-name font-inter font-regular color-gray-50">CONTACT</h2>
+                    <p class="sec-head-disc font-amatic font-regular color-blackish-gray">Need Help ? <span class="color-dark-red">Contact Us</span></p>
+                </div>
+                <div>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d21056742.211671695!2d-97.15369!3d49.891235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s14735+32A+AVE+Surrey+V4P+1Z8+bc!5e0!3m2!1sen!2sca!4v1424618801986" 
+                            width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+                    </div>
+                </div>
+                <div>
+                    <ul class="flex">
+                        <li class="flex">
+                            <div class="flex"><i class="fa-regular fa-map fa-lg color-white"></i></div>
+                            <div>
+                                <h3 class="font-inter font-bold color-gray-50">Our Address</h3>
+                                <p class="font-open color-blackish-gray">A108 Adam Street, New York, NY 535022</p>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <div class="flex"><i class="fa-regular fa-envelope fa-lg color-white"></i></div>
+                            <div>
+                                <h3 class="font-inter font-bold color-gray-50">Email Us</h3>
+                                <a class="font-open color-blackish-gray" href="mailto: contact@example.com"><p>contact@example.com</p></a>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <div class="flex"><i class="fa-solid fa-phone fa-lg color-white"></i></div>
+                            <div>
+                                <h3 class="font-inter font-bold color-gray-50">Call Us</h3>
+                                <a class="font-open color-blackish-gray" href="tel: +1 5589 55488 55">+1 5589 55488 55</a>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <div class="flex"><i class="fa-solid fa-share-nodes fa-lg color-white"></i></div>
+                            <div>
+                                <h3 class="font-inter font-bold color-gray-50">Opening Hours</h3>
+                                <p class="font-open color-blackish-gray"><strong>Mon-Sat:</strong> 11AM - 23PM; <strong>Sunday:</strong> Closed</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex">
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                    <input type="email" id="email" name="email" placeholder="Your Email">
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                    <textarea type="text" rows="6" id="message" name="message" placeholder="Message"></textarea>
+                    <input class="font-open color-white" type="submit" name="submit" role="button" value="Send Message">
+                </div>
+            </div>
+        </section>
+        <!-- ================= END CONTACT -->
+    </main>
+
+    <footer>
+        <div>
+            <div class="container flex-wrap-row main-space-between cross-space-between color-white">
+                <div class="sec flex-wrap-row main-space-between cross-space-between sm-100">
+                    <div class="flex main-left sm-100">
+                        <div><img class="sm-100" src="imgs/favicon.png" alt="favicon-plate-fork-knife-heart-red-white"></div>
+                        <h2 class="font-open font-bold">Mealify<span class="color-dark-red">.</span></h2>
+                    </div>
+                    <p class="font-open">Mealify is a restaurant landing page that offers a delicious dining experience to its customers.</p>
+                    <h3 class="font-inter font-bold text-center-sm sm-100">Social Media</h3>
+                    <div class="flex main-space-around sm-100">
+                        <a class="color-white" href="https://twitter.com/"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                        <a class="color-white" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                        <a class="color-white" href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                        <a class="color-white" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                    </div>
+                </div>
+                <div class="sec flex-wrap-row main-space-between cross-space-between sm-100">
+                    <h3 class="font-inter font-bold sm-100">Subscribe our Newsletter</h3>
+                    <p class="font-open sm-100">Don't miss out on our latest menu updates and exclusive offers - join our newsletter today and stay up-to-date with all things Mealify!</p>
+                    <div class="flex-wrap-row main-space-between sm-100">
+                        <input type="text" placeholder="Enter Your Email Address">
+                        <button class="color-white"><i class="fa-solid fa-envelope fa-sm fa-lg"></i> Subscribe</button>
+                    </div>
+                    <div class="sm-100">
+                        <h3 class="font-inter font-bold">Quick Links</h3>
+                        <ul class="flex-wrap-row main-space-between">
+                            <li><a class="font-open color-white sm-50" href="">Menu</a></li>
+                            <li><a class="font-open color-white sm-50" href="">Promo</a></li>
+                            <li><a class="font-open color-white sm-50" href="">About Us</a></li>
+                            <li><a class="font-open color-white sm-50" href="">Contact</a></li>
+                            <li><a class="font-open color-white sm-50" href="">Testimonial</a></li>
+                            <li><a class="font-open color-white sm-50" href="">Our Partners</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sec flex-wrap-row main-space-between cross-space-between sm-100">
+                    <h3 class="font-inter font-bold sm-100">Get in Touch</h3>
+                    <ul class="sm-100">
+                        <li class="flex main-left cross-center sm-100">
+                            <i class="fa-solid fa-location-dot fa-lg color-dark-red"></i>
+                            <p class="font-open">A108 Adam Street, New York, NY 535022</p>
+                        </li>
+                        <li class="flex main-left cross-center sm-100">
+                            <i class="fa-solid fa-envelope fa-lg color-dark-red"></i>
+                            <a class="font-open color-white" href="mailto: contact@example.com">contact@example.com</a>
+                        </li>
+                        <li class="flex main-left cross-center sm-100">
+                            <i class="fa-solid fa-phone fa-lg color-dark-red"></i>
+                            <a class="font-open color-white" href="tel: +1 5589 55488 55">+1 5589 55488 55</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

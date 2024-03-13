@@ -1,0 +1,102 @@
+/* ================= START CHEFS */
+
+#chefs>div>div:nth-child(2) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+#chefs .card {
+    position: relative;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 3px 3px 15px 0px var(--light-fade-black);
+    transition: transform 0.5s;
+}
+
+#chefs .card>div:nth-child(3) {
+    position: absolute;
+    top: 34px;
+    right: -48px;
+    font-size: 18px;    
+    background-color: var(--fade-white);
+    padding: 20px 15px;
+    border-radius: 4px;
+    flex-direction: column;
+    gap: 15px;
+    transition: right 0.1s;
+}
+
+#chefs .card>div:first-child {
+    position: relative;
+}
+
+#chefs .card>div:first-child svg {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+}
+
+#chefs .card>div:nth-child(2) {
+    padding: 10px 25px 25px;
+}
+
+#chefs .card>div:nth-child(2) span {
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px 0 10px;
+}
+
+#chefs .card>div:nth-child(2) p {
+    font-size: 15px;
+}
+
+#chefs .card>div:nth-child(3) a {
+    transition: color 0.5s;
+}
+
+#chefs .card>div:nth-child(3) a:hover {
+    color: var(--dark-gray);
+}
+
+#chefs .card:hover {
+    transform: scale(1.05);
+}
+
+#chefs .card:hover>div:nth-child(3) {
+    transition: right 0.5s 0.5s;
+    right: 10px;
+}
+
+@media (min-width: 768px) {
+
+    #chefs>div>div:nth-child(2) {
+        height: fit-content;
+        flex-direction: row;
+        column-gap: 2%;
+    }
+
+    #chefs .card {
+        width: calc(50% - 2%);
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    #chefs>div>div:nth-child(2) {
+        height: fit-content;
+        flex-direction: row;
+        column-gap: 30px 1.5%;
+    }
+
+    #chefs .card {
+        width: calc(33.33% - 1.5%);
+    }
+
+}
+
+/* ================= END CHEFS */

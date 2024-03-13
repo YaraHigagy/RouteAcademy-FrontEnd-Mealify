@@ -1,0 +1,316 @@
+/* ================= FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+/* ================= ROOT SELECTOR */
+
+:root {
+    --font-Arial: Arial, Helvetica, sans-serif;
+    --font-Amatic: 'Amatic SC', sans-serif;
+    --font-Inter: 'Inter', sans-serif;
+    --font-Open: 'Open Sans', sans-serif;
+
+    --white: hsl(0, 0%, 100%);
+    --fade-white: hsla(0, 0%, 100%, 0.5);
+    --black: hsl(0, 0%, 0%);
+    --fade-black: hsla(0, 0%, 0%, 0.5);
+    --light-fade-black: hsla(0, 0%, 0%, 0.1);
+    --blackish-gray: hsl(210, 11%, 15%);
+    --dark-gray: hsl(240, 7%, 23%);
+    --gray: hsl(240, 7%, 33%);
+    --gray-50: hsl(0, 0%, 50%);
+    --fade-gray-25: hsla(0, 0%, 25%, 0.2);
+    --light-gray: hsl(0, 0%, 93%);
+    --lighter-gray: hsl(0, 0%, 96%);
+    --dark-red: hsl(0, 84%, 44%);
+    --light-red: hsl(0, 84%, 49%);
+    --fade-red: hsl(0, 63%, 59%); 
+}
+
+/* ================= GENERAL SELECTORS */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: var(--font-open);
+    margin: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+p::selection,
+span::selection,
+a::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+img::selection {
+    color: var(--white);
+    background: var(--fade-red);
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+li:has(a) {
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: radial-gradient(gray, black);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.container {
+    margin: 50px auto;
+    padding: 40px 5px;
+}
+
+.sec-head {
+    margin-bottom: 50px;
+}
+
+.sec-head-name {
+    font-size: 14px;
+}
+
+.sec-head-disc {
+    font-size: 50px;
+}
+
+/* ================= GENERAL PROPERTIES */
+
+.clear-fix {
+    clear: both;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+
+.flex {
+    display: flex;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+}
+.sticky {
+    position: sticky;
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+
+.flex-wrap-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+.flex-wrap-col {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.main-space-between {
+    justify-content: space-between;
+}
+.main-space-around {
+    justify-content: space-around;
+}
+.main-center {
+    justify-content: center;
+}
+.main-left {
+    justify-content: flex-start;
+}
+.main-right {
+    justify-content: flex-end;
+}
+
+.cross-space-betweem {
+    align-items: space-between;
+}
+.cross-center {
+    align-items: center;
+}
+.cross-left {
+    align-items: flex-start;
+}
+.cross-right {
+    align-items: flex-end;
+}
+
+/* ================= BORDER PROPERTIES */
+
+.border-test {
+    border: 3px blue solid;
+}
+
+.border-none {
+    border: none;
+}
+
+.border-radius-sm {
+    border-radius: 7px;
+}
+
+.border-radius-xs {
+    border-radius: 4px;
+}
+
+.border-radius-circle {
+    border-radius: 50%;
+}
+
+.border-transparent {
+    border-color: transparent;
+}
+
+/* ================= FONT PROPERTIES */
+
+.font-arial {
+    font-family: var(--font-Arial);
+}
+.font-amatic {
+    font-family: var(--font-Amatic);
+}
+.font-inter {
+    font-family: var(--font-Inter);
+}
+.font-open {
+    font-family: var(--font-Open);
+}
+
+.font-regular {
+    font-weight: 400;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+.font-bold {
+    font-weight: 700;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+/* ================= COLOR PROPERTIES */
+
+.color-white {
+    color: var(--white);
+}
+
+.color-black {
+    color: var(--black);
+}
+
+.color-blackish-gray {
+    color: var(--blackish-gray);
+}
+
+.color-dark-gray {
+    color: var(--dark-gray);
+}
+
+.color-gray {
+    color: var(--gray);
+}
+
+.color-gray-50 {
+    color: var(--gray-50)
+}
+
+.color-dark-red {
+    color: var(--dark-red);
+}
+
+.color-light-red {
+    color: var(--light-red);
+}
+
+/* ================= BACKGROUND PROPERTIES */
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-light-gray {
+    background-color: var(--light-gray);
+}
+
+.bg-dark-red {
+    background-color: var(--dark-red);
+}
+
+.bg-light-red {
+    background-color: var(--light-red);
+}
+
+.bg-fade-red {
+    background-color: var(--fade-red);
+}
+
+/* ================= */

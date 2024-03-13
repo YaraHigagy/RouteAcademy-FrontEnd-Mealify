@@ -1,0 +1,281 @@
+@import "header.css";
+@import "home.css";
+@import "chefs.css";
+@import "gallery.css";
+@import "contact.css";
+@import "footer.css";
+
+/* ================= MEDIA QUERY - RESPONSIVENESS  */
+
+@media (min-width: 640px) {
+    .sm-100 {
+        width: 100%;
+    }
+    .sm-50 {
+        width: 50%;
+    }
+    .sm-33 {
+        width: 33.33%;
+    }
+    .sm-25 {
+        width: 25%;
+    }
+    .sm-20 {
+        width: 20%;
+    }
+    .sm-16 {
+        width: 16.666%;
+    }
+
+    .text-center-sm {
+        text-align: center;
+    }
+    .text-left-sm {
+        text-align: left;
+    }
+    .text-right-sm {
+        text-align: right;
+    }
+
+    .container {
+        margin: 0 44px;
+    }
+}
+
+@media (min-width: 768px) {
+    .md-100 {
+        width: 100%;
+    }
+    .md-50 {
+        width: 50%;
+    }
+    .md-33 {
+        width: 33.33%;
+    }
+    .md-25 {
+        width: 25%;
+    }
+    .md-20 {
+        width: 20%;
+    }
+    .md-16 {
+        width: 16.666%;
+    }
+
+    .text-center-md {
+        text-align: center;
+    }
+    .text-left-md {
+        text-align: left;
+    }
+    .text-right-md {
+        text-align: right;
+    }
+
+    .container {
+        width: 87%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg-100 {
+        width: 100%;
+    }
+    .lg-50 {
+        width: 50%;
+    }
+    .lg-33 {
+        width: 33.33%;
+    }
+    .lg-25 {
+        width: 25%;
+    }
+    .lg-20 {
+        width: 20%;
+    }
+    .lg-16 {
+        width: 16.666%;
+    }
+
+    
+    .text-center-lg {
+        text-align: center;
+    }
+    .text-left-lg {
+        text-align: left;
+    }
+    .text-right-lg {
+        text-align: right;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .xl-100 {
+        width: 100%;
+    }
+    .xl-50 {
+        width: 50%;
+    }
+    .xl-33 {
+        width: 33.33%;
+    }
+    .xl-25 {
+        width: 25%;
+    }
+    .xl-20 {
+        width: 20%;
+    }
+    .xl-16 {
+        width: 16.666%;
+    }
+
+    
+    .text-center-xl {
+        text-align: center;
+    }
+    .text-left-xl {
+        text-align: left;
+    }
+    .text-right-xl {
+        text-align: right;
+    }
+
+    .container {
+        
+    }
+}
+
+/* ================= MEDIA QUERY - COLOR THEME (DARK MODE)  */
+
+:where(html) {
+    --darkmode: 0;
+    container-name: root;
+    container-type: normal;
+}
+
+@media (prefers-color-scheme: dark) {
+    html { --darkmode: 1; }
+}
+
+@media (prefers-color-scheme: light) {
+    html { --darkmode: 0; }
+}
+
+html:has(#light-mode:checked) { --darkmode: 0; }
+html:has(#dark-mode:checked) { --darkmode: 1; }
+
+@container root style(--darkmode: 1) {
+    body {
+        /* --white: hsl(0, 0%, 15%); */
+        --fade-white: hsla(0, 0%, 100%, 0.5);
+        --black: hsl(0, 0%, 0%);
+        --fade-black: hsla(0, 0%, 0%, 0.5);
+        --light-fade-black: hsla(0, 0%, 0%, 0.1);
+        --blackish-gray: hsl(0, 0%, 100%);
+        --dark-gray: hsl(240, 7%, 23%);
+        --gray: hsl(240, 7%, 33%);
+        --gray-50: hsl(0, 0%, 50%);
+        --fade-gray-25: hsla(0, 0%, 0%, 0.3);
+        --light-gray: hsl(0, 0%, 15%);
+        --lighter-gray: hsl(0, 0%, 96%);
+        --dark-red: hsl(35, 72%, 44%);
+        --light-red: hsl(35, 72%, 49%);
+        --fade-red: hsl(35, 64%, 35%);
+    }
+}
+
+
+
+/* ================= START HEADER */
+html:has(#dark-mode:checked) header nav {
+    background-color: #171717;
+}
+html:has(#dark-mode:checked) header nav ul li a {
+    color: #b3b3b3;
+}
+html:has(#dark-mode:checked) header nav ul li a:hover {
+    color: #fff;
+}
+@media (min-width: 640px) {
+    html:has(#dark-mode:checked) header .container>div:nth-child(2) #nav-menu ul {
+        background-color: #202020;
+        border-left: 2px solid #171717;
+    }
+}
+@media (min-width: 1024px) {
+    html:has(#dark-mode:checked) header .container>div:nth-child(2) #nav-menu ul {
+        background-color: transparent;
+    }
+    html:has(#dark-mode:checked) #nav-menu ul li a:hover,
+    html:has(#dark-mode:checked) body:has(#home:target) #nav-menu ul li a[href="#home"],
+    html:has(#dark-mode:checked) body:has(#chefs:target) #nav-menu ul li a[href="#chefs"],
+    html:has(#dark-mode:checked) body:has(#gallery:target) #nav-menu ul li a[href="#gallery"],
+    html:has(#dark-mode:checked) body:has(#contact:target) #nav-menu ul li a[href="#contact"] {
+        color: #fff;
+    }
+}
+/* ================= END HEADER */
+
+/* ================= START HOME */
+html:has(#dark-mode:checked) #home h2,
+html:has(#dark-mode:checked) #home p {
+    color: #fff;
+}
+html:has(#dark-mode:checked) #home .container>div:nth-child(1) div>a:nth-child(2) div {
+    background-color: #171717;
+}
+html:has(#dark-mode:checked) #home .container>div:nth-child(1) div>a:nth-child(1) {
+    color: #171717;
+}
+/* ================= END HOME */
+
+/* ================= START CHEFS */
+html:has(#dark-mode:checked) #chefs {
+    background-color: #202020;
+}
+html:has(#dark-mode:checked) #chefs .card {
+    background-color: #171717;
+}
+html:has(#dark-mode:checked) #chefs .card>div:nth-child(2) {
+    background: linear-gradient(#fff, 22%, #202020, #171717, #202020);
+}
+html:has(#dark-mode:checked) #chefs .card h3,
+html:has(#dark-mode:checked) #chefs .card span {
+    color: #202020;
+}
+html:has(#dark-mode:checked) #chefs .card p {
+    color: #919191;
+}
+/* ================= END CHEFS */
+
+/* ================= START GALLERY */
+/* ================= END GALLERY */
+
+/* ================= START CONTACT */
+html:has(#dark-mode:checked) #contact {
+    background-color: #202020;
+}
+html:has(#dark-mode:checked) #contact>div>div:nth-child(3) li{
+    background-color: #0D0D0D;
+}
+html:has(#dark-mode:checked) #contact>div>div:nth-child(3) li i{
+    color: #0D0D0D;
+}
+html:has(#dark-mode:checked) #contact>div>div:nth-child(4) {
+    background-color: #171717;
+}
+html:has(#dark-mode:checked) #contact>div>div:nth-child(4) input[type="submit"]{
+    color: #171717;
+}
+/* ================= END CONTACT */
+
+/* ================= START FOOTER */
+html:has(#dark-mode:checked) footer .sec:nth-child(2)>:nth-child(3)> button {
+    color: #171717;
+}
+/* ================= END FOOTER */
