@@ -1,4 +1,4 @@
-# Random Quote Generator
-Webpage, Responsive. Using: HTML, CSS(Grid Layout). <br />
-**Note:** The webpage presents a collection of cards using Grid layout module in CSS.
-### Project's URL: 
+# Mealify
+Landing page, Responsive. Using: HTML, CSS(Flexbox Layout). <br />
+**Note:** The landing page presents the Flexbox layout module in CSS and the dark mode feature.
+### Project's URL: https://yarahigagy.github.io/RouteAcademy-FrontEnd-Mealify/
